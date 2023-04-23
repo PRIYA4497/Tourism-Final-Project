@@ -1,0 +1,39 @@
+<img src="assets/g2.jpg"  width="561" height="477">
+
+       <form #updateform="ngForm" (ngSubmit)="updatepack(updateform)" class="box">
+        <h3> Update Package Details</h3><hr>
+           <label for="packid"> packid: </label>&nbsp;
+           <input type="number" id="packid" #packid (ngModel)="packid" name="packid">
+           <br> <br>
+   
+           <label for="packplacename"> packplacename : </label>&nbsp;
+           <input type="text" id="packplacename"  #packplacename (ngModel)="packplacename" name="packplacename">
+           <br><br>
+
+           <label for="pcity"> pcity : </label>&nbsp;
+           <input type="text" id="pcity"  #pcity (ngModel)="pcity" name="pcity">
+           <br> <br>
+
+           <label for="pcost"> pcost : </label>&nbsp;
+           <input type="number" id="pcost"  #pcost (ngModel)="pcost" name="pcost">
+           <br><br>
+
+           <label for="pdays"> pdays : </label>&nbsp;
+           <input type="text" id="pdays"  #pdays (ngModel)="pdays" name="pdays">
+           <br><br>
+
+
+           <label for="pnights"> pnights : </label>&nbsp;
+           <input type="text" id="pnights"  #pnights (ngModel)="pnights" name="pnights">
+           <br><br>
+
+           <label for="persons"> persons: </label>&nbsp;
+           <input type="number" id="persons" #persons (ngModel)="persons" name="persons">
+           <br> <br>
+
+   
+           <input type="submit" value="Update" >
+
+           
+   
+       </form>

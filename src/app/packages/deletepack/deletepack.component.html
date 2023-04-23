@@ -1,0 +1,11 @@
+
+     <img src="assets/g1.jpeg"  width="561" height="477">
+
+       <form #deleteform="ngForm" (ngSubmit)="deletepack(deleteform)" class="box">
+        <h3> DeletePackage Details</h3><hr>
+           <label for="packid"> packid: </label>&nbsp;
+           <input type="number" id="packid" #packid (ngModel)="packid" name="packid">
+           <br> <br>
+
+           <input type="submit" value="Delete" >
+           </form>
